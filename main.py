@@ -37,3 +37,17 @@ from cell_phone import CellPhone
 
 my_phone = CellPhone("Samsung Galaxy Note 10")
 print(my_phone.contacts)
+
+message = "Thank you for being a loyal AT&T customer! Click the link for a $100 voucher: http://totallynotascam.we-are-reliable.com/give-us-your-ssn/dfslewthacthajdfs"
+my_phone.receive_text(message)
+
+message_two = "Merry Christmas! XOXO Grandma"
+my_phone.receive_text(message_two)
+
+print(my_phone.messages)
+
+outgoing_text = "Thank you Grandma, Merry Christmas to you, too!"
+my_phone.send_message(outgoing_text, "Grandma")
+
+my_phone.toggle_vibrate()
+print(my_phone.vibrate)
